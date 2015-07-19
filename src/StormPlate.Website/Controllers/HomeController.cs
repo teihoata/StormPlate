@@ -10,7 +10,7 @@ namespace StormPlate.WebSite.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("Admin");
         }
     }
 }

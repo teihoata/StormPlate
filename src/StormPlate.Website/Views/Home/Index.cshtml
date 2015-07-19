@@ -2,6 +2,13 @@
 <html ng-app="App">
 <head>
     <base href="/">
+
+    <environment names="Development">
+        <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" asp-file-version="true" />
+    </environment>
+    <environment names="Staging,Production">
+        <link asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-file-version="true" />
+    </environment>
 </head>
 <body>
     <h1>Hello World</h1>

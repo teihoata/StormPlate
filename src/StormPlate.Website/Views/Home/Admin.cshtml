@@ -1,0 +1,84 @@
+﻿@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+<html ng-app="App">
+<head>
+    <base href="/">
+
+    <environment names="Development">
+        <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" asp-file-version="true" />
+        <link href="~/lib/startbootstrap-sb-admin-2/css/sb-admin-2.css" rel="stylesheet" asp-file-version="true" />
+        <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.2/metisMenu.min.css">
+
+    </environment>
+    <environment names="Staging,Production">
+        <link asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-file-version="true" />
+        <link href="~/lib/startbootstrap-sb-admin-2/css/sb-admin-2.css" rel="stylesheet" asp-file-version="true" />
+        <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    </environment>
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+            </div>
+            <!-- /.navbar-header -->
+            <div ui-view="topbar"></div>
+            <!-- /.navbar-top-links -->
+            <div ui-view="sidebar"></div>
+            
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Blank</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    <environment names="Development">
+        <script src="~/lib/angularjs/angular.js" asp-file-version="true"></script>
+        <script src="~/lib/angular-ui-router/angular-ui-router.js" asp-file-version="true"></script>
+
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.2/metisMenu.js"></script>
+
+    </environment>
+    <environment names="Staging,Production">
+        <script asp-fallback-src="~/lib/angularjs/angular.js" asp-file-version="true"></script>
+        <script asp-fallback-src="~/lib/angular-ui-router/angular-ui-router.js" asp-file-version="true"></script>
+
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    </environment>
+
+    <environment names="Development">
+        <script asp-src-include="~/js/**/*.start.js" asp-file-version="true"></script>
+        <script asp-src-include="~/js/**/*.module.js" asp-file-version="true"></script>
+        <script asp-src-include="~/js/**/*.js" asp-src-exclude="~/js/**/*.module.js,~/js/**/*.start.js" asp-file-version="true"></script>
+    </environment>
+
+</body>
+</html>

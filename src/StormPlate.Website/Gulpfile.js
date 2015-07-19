@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='clean, clean-ts' AfterBuild='copy, compile-ts' />
+/// <binding BeforeBuild='clean, clean-ts, copy-html' AfterBuild='copy, compile-ts' />
 /*
 This file in the main entry point for defining Gulp tasks and using Gulp plugins.
 Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
@@ -29,9 +29,11 @@ gulp.task("copy", ["clean"], function () {
         "bootstrap": "bootstrap/dist/**/*.{js,map,css,ttf,svg,woff,eot}",
         "angularjs": "angularjs/angular*.{js,map}",
         "angular-ui-router": "angular-ui-router/release/angular-ui-router*.{js,map}",
+        "startbootstrap-sb-admin-2": "startbootstrap-sb-admin-2/dist/**/*.css",
         //"bootstrap-touch-carousel": "bootstrap-touch-carousel/dist/**/*.{js,css}",
         //"hammer.js": "hammer.js/hammer*.{js,map}",
-        //"jquery": "jquery/jquery*.{js,map}",
+        "jquery": "jquery/dist/*.{js,map}",
+        "font-awesome": "font-awesome/**/*.{css,map,ttf,svg,woff,eot,woff2,otf}",
         //"jquery-validation": "jquery-validation/jquery.validate.js",
         //"jquery-validation-unobtrusive": "jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     }

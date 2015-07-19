@@ -1,9 +1,16 @@
 {
-    "name": "StormPlate.WebSite",
-    "private": true,
-    "dependencies": {
-        "bootstrap": "3.0.0",
-        "angularjs": "1.4.2",
-        "angular-ui-router": "0.2.15"
-    }
+  "name": "StormPlate.WebSite",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "jquery": "2.1.4",
+    "angularjs": "1.4.2",
+    "angular-ui-router": "0.2.15",
+    "font-awesome": "4.3.0",
+    "startbootstrap-sb-admin-2": "1.0.7"
+  },
+  "resolutions": {
+    "bootstrap": "~3.3.0",
+    "font-awesome": "4.3.0"
+  }
 }

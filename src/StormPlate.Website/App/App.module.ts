@@ -10,13 +10,17 @@
             $locationProvider: ng.ILocationProvider) {
 
             $stateProvider
-                .state('Default',
+                .state('Blank',
                 {
                     url: '/',
                     views: {
-                        'content': {
-                            templateUrl: 'html/Timetable/Timetable.html',
-                            controller: "App.Timetable.TimetableController"
+                        'sidebar': {
+                            templateUrl: 'html/Shared/SideBar.html',
+                            controller: "App.Shared.SidebarController"
+
+                        },
+                        'topbar': {
+                            templateUrl: 'html/Shared/Topbar.html'
                         }
                     }
                 })

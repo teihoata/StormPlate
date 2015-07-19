@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0",
+    "name": "StormPlate.WebSite",
+    "private": true,
+    "devDependencies": {
+        "gulp": "3.8.11",
+        "gulp-inject": "1.2.0",
+        "rimraf": "2.2.8",
+        "gulp-typescript": "2.7.1",
+        "gulp-sourcemaps": "1.5.2",
+        "del": "1.1.1",
+        "gulp-rename" : "1.2.2",
+        "gulp-tsc": "0.9.4"
+    }
+}

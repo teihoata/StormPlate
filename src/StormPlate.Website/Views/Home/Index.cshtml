@@ -1,0 +1,24 @@
+﻿@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+<html ng-app="App">
+<head>
+    <base href="/">
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <div ui-view="content"></div>
+    <environment names="Development">
+        <script src="~/lib/angularjs/angular.js" asp-file-version="true"></script>
+        <script src="~/lib/angular-ui-router/angular-ui-router.js" asp-file-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/angularjs/angular.js" asp-file-version="true"></script>
+    </environment>
+    <environment names="Development">
+        <script asp-src-include="~/js/**/*.start.js" asp-file-version="true"></script>
+        <script asp-src-include="~/js/**/*.module.js" asp-file-version="true"></script>
+        <script asp-src-include="~/js/**/*.js" asp-src-exclude="~/js/**/*.module.js,~/js/**/*.start.js" asp-file-version="true"></script>
+    </environment>
+
+</body>
+</html>

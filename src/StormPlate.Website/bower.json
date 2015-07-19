@@ -1,0 +1,9 @@
+{
+    "name": "StormPlate.WebSite",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "3.0.0",
+        "angularjs": "1.4.2",
+        "angular-ui-router": "0.2.15"
+    }
+}

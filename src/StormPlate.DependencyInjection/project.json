@@ -1,0 +1,28 @@
+{
+    "version": "1.0.0-*",
+    "description": "",
+    "authors": [ "" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta5",
+        "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta5",
+
+        "Microsoft.AspNet.Providers.Core": "2.0.0",
+
+        "StormPlate.Core": "1.0.0-*",
+        "StormPlate.EntityFramework": "1.0.0-*",
+        "StormPlate.EntityFramework.Models": "1.0.0-*",
+        "StormPlate.Services": "1.0.0-*",
+        "StormPlate.WebApi": "1.0.0-*"
+    },
+
+    "frameworks": {
+        "dnx451": {
+            "dependencies": {
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-﻿{
+{
     "webroot": "wwwroot",
     "version": "1.0.0-*",
 
@@ -7,22 +7,8 @@
         "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
         "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta5",
 
-        "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta5",
-        "Microsoft.Framework.Configuration.Json": "1.0.0-beta5",
-        "Microsoft.Framework.Configuration.UserSecrets": "1.0.0-beta5",
-
-        "Microsoft.AspNet.StaticFiles": "1.0.0-beta5",
-        "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta5",
-        "Microsoft.AspNet.Mvc": "6.0.0-beta5",
-        "Microsoft.AspNet.Mvc.Razor": "6.0.0-beta5",
-        "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta5",
-        "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-beta5",
-
-
         "StormPlate.Core": "1.0.0-*",
-        "StormPlate.DependencyInjection": "1.0.0-*",
-        "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
-        "StormPlate.WebApi": "1.0.0-*"
+        "StormPlate.DependencyInjection": "1.0.0-*"
     },
 
     "commands": {

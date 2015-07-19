@@ -1,0 +1,16 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "",
+    "authors": [ "" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "StormPlate.Core": "1.0.0-*"
+    },
+
+    "frameworks": {
+        "dnx451": { }
+    }
+}

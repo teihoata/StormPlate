@@ -15,7 +15,7 @@ namespace StormPlate
     public class Startup
     {
         public IConfiguration Configuration { get; set; }
-        //DependencyInjection.StartupManager startUpManager { get; set; }
+        DependencyInjection.StartupManager startUpManager { get; set; }
         public Startup(IHostingEnvironment env, IApplicationEnvironment app)
         {
             var path = app.ApplicationBasePath;
@@ -32,7 +32,7 @@ namespace StormPlate
             configuration.AddEnvironmentVariables();
             Configuration = configuration.Build();
 
-           // startUpManager = new DependencyInjection.StartupManager(Configuration);
+            startUpManager = new DependencyInjection.StartupManager(Configuration);
         }
 
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
@@ -47,7 +47,7 @@ namespace StormPlate
         {
             app.UseStaticFiles();
 
-            //startUpManager.Configure(app);
+            startUpManager.Configure(app);
 
             app.UseMvc(routes =>
             {
